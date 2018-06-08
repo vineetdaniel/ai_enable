@@ -132,7 +132,7 @@ googleAnalytics = ""
         url = "#"
 
     [[params.services.row.list]]
-        icon = "fa-lock"
+        icon = "https://use.fontawesome.com/releases/v5.0.13/svgs/brands/mixcloud.svg"
         title = "AWS Infrastructure"
         description = "We offer a number of infrastructure options to our clients, ranging from shared to dedicated environments, with customisable support and maintenance options too. We’ve seen countless examples of sites that didn’t have the correct setup from the get-go, became victims of their own success, and left their users with a terrible experience. From the outset, Wave will structure your application so it can deal with your expected spikes in traffic. It’s one less thing for our clients to worry about."
         url = "#"
