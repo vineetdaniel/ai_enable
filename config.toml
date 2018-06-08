@@ -1,0 +1,370 @@
+# Site settings
+baseurl = "http://aienable.com/"
+languageCode = "en-us"
+title = "ai_enable"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Your name"
+  description = "Your description"
+  # email = "your@email.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "ai_enable"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Services"
+    portfolio = "Portfolio"
+    about = "Process"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #   url = "http://gohugo.io"
+    #   name = "External link"
+    #   weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To Our Studio!"
+    subtitle = "It's nice to meet you"
+    buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    subtitle = "We are specialized in high quality & affordable services for small & medium companies."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "E-Commerce"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "Responsive Web Design"
+      description = "We make sure all our sites meet the accessibility standards demanded by the W3 Consortium and Google recommendation. Our websites are responsive and mobile friendly, tested in the most commonly used browsers at different screen resolutions. and devices."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Web"
+      description = "We are web design agency who strategically create and develop attractive and engaging websites. We offer the best prices and packages in Switzerland, for building and maintaining a website. Our results will make every visitors you have to a potential customer and a longtime partner"
+      url = "#"
+
+    [[params.services.row.list]]
+        icon = "fa-lock"
+        title = "Maintenance & Updates"
+        description = "A website’s maintenance and update is like taking care of a flower you have in your living room – always clean, always shiny, without dust on the leaves and never thirsty for water. Without a proper care, the flower will lose its natural colors and eventually fade. The same goes for a Website."
+        url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Mobile Development"
+      description = "We think ahead, innovate and develop cutting-edge apps for iOS Android and Windows. Our specialist team of programmers is well-versed with the latest advancements in both the Native and Cross-Platform application platforms. Performance and Scalability is at the heart of all our software development."
+      url = "#"
+
+     [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "API Development"
+      description = "For your new app to deliver the optimum return on investment for your organisation, you will require it to integrate with your existing or proprietary systems. The majority of our mobile apps contain some kind of web backend, and we typically will write these RESTful APIs so the mobile apps can talk to the web backend."
+      url = "#"
+
+    [[params.services.row.list]]
+        icon = "fa-lock"
+        title = "Cyber Security"
+        description = "Vulnerability Assessment and Penetration Testing (VA/PT) approach gives an organization a more detailed view of the threats facing its applications, enabling the business to better protect its systems and data from malicious attacks."
+        url = "#"
+
+    [[params.services.row.list]]
+        icon = "fa-lock"
+        title = "AWS Infrastructure"
+        description = "We offer a number of infrastructure options to our clients, ranging from shared to dedicated environments, with customisable support and maintenance options too. We’ve seen countless examples of sites that didn’t have the correct setup from the get-go, became victims of their own success, and left their users with a terrible experience. From the outset, Wave will structure your application so it can deal with your expected spikes in traffic. It’s one less thing for our clients to worry about."
+        url = "#"
+
+   
+
+   
+
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "Process"
+    subtitle = "Web & App development process in few steps"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = ""
+      title = "Planning"
+      description = "Understanding what you want out of your site and how to implement it. By filling the web qoute form you will give us all nesesery information"
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = ""
+      title = "Design"
+      description = "If our quote meet your needs and budget, we will create a mock-up and concept proposal for you website."
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = ""
+      title = "Development"
+      description = "After quote is accepted, design and concept are reviewed, we'll implement suggested changes and create official version with content received from you"
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = ""
+      title = "Go Live"
+      description = "After successful tests, the website is lunched on official address and all accounts and CMS instructions are delivered to the client."
+
+    [[params.about.events]]
+     img = "1.jpg"
+     date = ""
+     title = "Maintenance"
+     description = "Maintenance and Updates are an important part of the process, which ensure efficient work of your website all the time"
+
+
+  # Team section
+  [params.team]
+    enable = false
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "1.jpg"
+      name = "Kay Garland"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
+      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "2.jpg"
+      name = "Larry Parker"
+      position = "Lead Marketer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Diana Pertersen"
+      position = "Lead Developer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    buttonText = "Send message"
+    netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "vineet@aienable.com"
+
+    # Success and error message overwrite for async contact form
+    thanks = "Thank you for awesomely contacting us."
+    error = "Message could not be send. Please contact us at vineet@aienable.com instead."
+
+    [params.contact.captcha]
+      sitekey = ""
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+      title = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
+
