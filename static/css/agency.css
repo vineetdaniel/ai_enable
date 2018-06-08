@@ -299,6 +299,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    
 }
 
 header .intro-text .intro-lead-in {
@@ -316,6 +317,7 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    color: #fed136;
 }
 
 @media(min-width:768px) {
@@ -330,6 +332,7 @@ header .intro-text .intro-heading {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
+        color: #fed136;
     }
 
     header .intro-text .intro-heading {
@@ -339,6 +342,7 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        color: #fed136;
     }
 }
 
