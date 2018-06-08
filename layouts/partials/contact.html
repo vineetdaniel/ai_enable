@@ -85,12 +85,11 @@
                 {{ with $contact.captcha }}
                   <div class="g-recaptcha-container">
                     <span class="g-recaptcha-filler"></span>
-                    <div class="g-recaptcha" data-sitekey="6LdT7V0UAAAAAHPxB9WEsRgy1AXjRyhWO_Lr8Ytj"></div>
-
                     <button
                       type="submit"
                       value="Submit"
                       data-sitekey="6LdT7V0UAAAAAHPxB9WEsRgy1AXjRyhWO_Lr8Ytj"
+                      data-size="visible"
                       class="g-recaptcha btn btn-xl">
                       {{ print $contact.buttonText }} 
                     </button>
