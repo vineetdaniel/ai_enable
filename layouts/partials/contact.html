@@ -82,24 +82,9 @@
                     Message could not be send. Please contact us at {{ (or $contact.email .Site.Params.email) }} instead.
                   {{ end }}
                 </div><br />
-                {{ with $contact.captcha }}
-                  <div class="g-recaptcha-container">
-                    <span class="g-recaptcha-filler"></span>
-                    <button
-                      type="submit"
-                      value="Submit"
-                      data-sitekey="6LdT7V0UAAAAAHPxB9WEsRgy1AXjRyhWO_Lr8Ytj"
-                      data-size="visible"
-                      class="g-recaptcha btn btn-xl">
-                      {{ print $contact.buttonText }} 
-                    </button>
-                    <span class="filler"></span>
-                  </div>
-                {{ else }}
-                  <button type="submit" value="Submit" class="btn btn-xl">
-                    {{ print $contact.buttonText }}
-                  </button>
-                {{ end }}
+                <button type="submit" value="Submit" class="btn btn-xl">
+                  {{ print $contact.buttonText }}
+                </button>
               </div>
             </div>
             {{ range $contact.form.hidden }}
