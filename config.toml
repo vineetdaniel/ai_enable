@@ -312,7 +312,7 @@ She worked at Pied Piper for years until they went belly up."""
     error = "Message could not be send. Please contact us at vineet@aienable.com instead."
 
     [params.contact.captcha]
-      sitekey = "6LdT7V0UAAAAAHPxB9WEsRgy1AXjRyhWO_Lr8Ytj"
+      sitekey = "6Leh710UAAAAAD3gzlSP3tc9GEwxRmReFkbhmZrf"
 
     # 'warning' defines error messages for invalid inputs
     [params.contact.form.name]
