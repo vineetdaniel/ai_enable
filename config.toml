@@ -132,7 +132,7 @@ googleAnalytics = ""
         url = "#"
 
     [[params.services.row.list]]
-        icon = "https://use.fontawesome.com/releases/v5.0.13/svgs/brands/mixcloud.svg"
+        icon = "fa-lock"
         title = "AWS Infrastructure"
         description = "We offer a number of infrastructure options to our clients, ranging from shared to dedicated environments, with customisable support and maintenance options too. We’ve seen countless examples of sites that didn’t have the correct setup from the get-go, became victims of their own success, and left their users with a terrible experience. From the outset, Wave will structure your application so it can deal with your expected spikes in traffic. It’s one less thing for our clients to worry about."
         url = "#"
@@ -144,7 +144,7 @@ googleAnalytics = ""
 
   # Portfolio section
   [params.portfolio]
-    enable = false
+    enable = true
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
@@ -153,7 +153,7 @@ googleAnalytics = ""
     subtitle = "Lorem ipsum dolor sit amet consectetur."
 
     [params.portfolio.modal]
-      client = "Client"
+      client = "VWBeatRoute"
       date = "Date"
       category = "Category"
       buttonText = "Close project"
