@@ -92,7 +92,7 @@ googleAnalytics = ""
     [[params.services.row.list]]
       icon = "fa-shopping-cart"
       title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      description = "If you wish to promote and sell your products and/or services over the internet, then you need an eCommerce website, which is basically an online shopping cart website. Here, you can integrate a secure payment gateway that your customers can use to order and complete transactions."
       url = "#"
 
     [[params.services.row.list]]
