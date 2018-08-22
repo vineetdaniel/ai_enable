@@ -104,7 +104,7 @@ googleAnalytics = ""
     [[params.services.row.list]]
       icon = "fa-lock"
       title = "Web"
-      description = "We are web design agency who strategically create and develop attractive and engaging websites. We offer the best prices and packages in Switzerland, for building and maintaining a website. Our results will make every visitors you have to a potential customer and a longtime partner"
+      description = "We are web design agency who strategically create and develop attractive and engaging websites. We offer the best prices and packages, for building and maintaining a website. Our results will make every visitors you have to a potential customer and a longtime partner"
       url = "#"
 
     [[params.services.row.list]]
